@@ -5,14 +5,14 @@ This repository contains the code of four JavaScript projects showing how to cre
 - *secure-react-app*. This is a basic React app using the Auth0 login button
 - *secure-vue-app*. This is a basic Vue app using the Auth0 login button
 
-The following article describes the implementation details: **[ARTICLE REFERENCE]()**
+The following article describes the implementation details: **[TODO: ARTICLE REFERENCE]()**
 
 ## Requirements
 
 - [Node.js](https://nodejs.org) installed on your machine
 - An [Auth0](https://auth0.com/) account.
-- [Angular CLI](https://cli.angular.io/) installed on you machine (to run the Angular project)
-- [Vue CLI](https://cli.vuejs.org/) installed on you machine (to run the Vue project)
+- [Angular CLI](https://cli.angular.io/) installed on your machine (to run the Angular project)
+- [Vue CLI](https://cli.vuejs.org/) installed on your machine (to run the Vue project)
 
 ## Running the applications
 
