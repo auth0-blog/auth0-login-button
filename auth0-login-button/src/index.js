@@ -25,7 +25,7 @@ export default class Auth0Login extends HTMLElement {
     super();
 
     this._domain = "";
-    this._clientId = "";
+    this._clientid = "";
 
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
@@ -41,12 +41,12 @@ export default class Auth0Login extends HTMLElement {
     this.buildAuth0Client();
   }
 
-  get clientId() {
-    return this._clientId;
+  get clientid() {
+    return this._clientid;
   }
 
   set clientid(val) {
-    this._clientId = val;
+    this._clientid = val;
     this.setAttribute("clientid", val);
     this.buildAuth0Client();
   }
@@ -62,12 +62,11 @@ export default class Auth0Login extends HTMLElement {
           this._domain = newValue;
           break;
         case "clientid":
-          this._clientId = newValue;
+          this._clientid = newValue;
           break;
       }
-
-      this.buildAuth0Client();
     }
+    this.buildAuth0Client();
   }
 
   async connectedCallback() {
@@ -86,15 +85,14 @@ export default class Auth0Login extends HTMLElement {
       e.preventDefault();
     });
 
-    await this.updateUI();
-
     await this.handleRedirectCallback();
+    await this.updateUI();
   }
 
   async buildAuth0Client() {
     this.auth0Client = await createAuth0Client({
       domain: this._domain,
-      client_id: this._clientId
+      client_id: this._clientid
     });
   }
 
@@ -128,8 +126,6 @@ export default class Auth0Login extends HTMLElement {
       const query = window.location.search;
       if (query.includes("code=") && query.includes("state=")) {
         await this.auth0Client.handleRedirectCallback();
-
-        this.updateUI();
         window.history.replaceState({}, document.title, "/");
       }
     }

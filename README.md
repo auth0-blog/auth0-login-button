@@ -20,7 +20,7 @@ The following article describes the implementation details: **[TODO: ARTICLE REF
 
 1. Clone this repo: `git clone https://github.com/auth0-blog/auth0-login-button.git`
 
-2. Move into the `auth0-login-button` folder
+2. Move into the `auth0-login-button/auth0-login-button` folder
 
 3. Run the following command (it may require admin privileges)
 
