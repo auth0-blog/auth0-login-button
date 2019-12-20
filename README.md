@@ -5,7 +5,7 @@ This repository contains the code of four JavaScript projects showing how to cre
 - *secure-react-app*. This is a basic React app using the Auth0 login button
 - *secure-vue-app*. This is a basic Vue app using the Auth0 login button
 
-The following article describes the implementation details: **[TODO: ARTICLE REFERENCE]()**
+The following article describes the implementation details: **[Beyond JavaScript Frameworks: Build a Universal Login Button as a Web Component](https://auth0.com/blog/beyond-javascript-frameworks-universal-login-web-component)**
 
 ## Requirements
 
